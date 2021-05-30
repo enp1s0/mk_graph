@@ -15,7 +15,7 @@ df = pd.read_csv("data.csv", encoding="UTF-8")
 
 for t in type_list:
     df_t = df.query("type=='" + t + "'")
-    plt.errorbar(df_t['x'], df_t['y'], label="Type" + t, markersize=4, marker="*")
+    plt.plot(df_t['x'], df_t['y'], label="Type" + t, markersize=4, marker="*")
 
 plt.legend(loc='best',
        bbox_to_anchor=(0, 1.3, 1., -.1),
