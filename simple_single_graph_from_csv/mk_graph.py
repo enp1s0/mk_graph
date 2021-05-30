@@ -26,10 +26,7 @@ for t in type_list:
 
 # Legend config
 plt.legend(loc='best',
-       bbox_to_anchor=(0, 1.3, 1., -.1),
-       borderaxespad=0.,
-       ncol=len(type_list),
-       mode="expand")
+       ncol=len(type_list))
 
 # Save to file
 plt.savefig("result." + output_file_extension, bbox_inches="tight")
