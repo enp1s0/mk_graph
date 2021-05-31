@@ -1,8 +1,8 @@
 import matplotlib.pyplot as plt
 import pandas as pd
 
-# Output format
-output_file_extension = "png"
+# Output
+output_file_name = "figure.pdf"
 
 # The list of `type` in the input csv file
 type_list = ['A', 'B']
@@ -29,4 +29,4 @@ plt.legend(loc='best',
        ncol=len(type_list))
 
 # Save to file
-plt.savefig("result." + output_file_extension, bbox_inches="tight")
+plt.savefig(output_file_name, bbox_inches="tight")
