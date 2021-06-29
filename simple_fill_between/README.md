@@ -15,4 +15,4 @@ B,3,27,2,2
 
 ## Output
 
-![output ecample](./output_example.png)
+![output example](./figure.png)
