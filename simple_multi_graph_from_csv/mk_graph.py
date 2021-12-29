@@ -3,6 +3,8 @@ import pandas as pd
 
 # Output
 output_file_name = "figure.pdf"
+fig_block_m = 2
+fig_block_n = 3
 
 # The list of `type` in the input csv file
 type_list = ['A', 'B', 'C', 'D', 'E', 'F']
@@ -26,13 +28,13 @@ plt.grid()
 df = pd.read_csv("data.csv", encoding="UTF-8")
 
 # Create graph
-fig, axs = plt.subplots(2, 3, figsize=(10, 6))
+fig, axs = plt.subplots(fig_block_m, fig_block_n, figsize=(10, 6))
 
 type_index = 0
 line_list = []
 label_list = []
-for i in range(3):
-    for j in range(2):
+for i in range(fig_block_n):
+    for j in range(fig_block_m):
         v = i + j * 3 + 1
         # Plot
         for t in type_list:
