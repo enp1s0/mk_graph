@@ -17,13 +17,6 @@ color_table = {
         'F' : 'purple',
         }
 
-# Figure config
-plt.figure(figsize=(8, 3))
-plt.xlabel("X")
-plt.ylabel("Y")
-#plt.yscale("log", base=10)
-plt.grid()
-
 # Load input data
 df = pd.read_csv("data.csv", encoding="UTF-8")
 
@@ -39,6 +32,7 @@ for i in range(fig_block_n):
         # Plot
         for t in type_list:
             axs[j][i].set_title('x' + str(v))
+            #axs[j][i].set_xscale('log', base=2)
             l = axs[j][i].plot(
                     df['x'],
                     df[t] * v,
