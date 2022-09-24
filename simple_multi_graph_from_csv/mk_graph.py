@@ -39,7 +39,7 @@ for i in range(fig_block_n):
                     markersize=4,
                     marker="*",
                     color=color_table[t])
-            if v == len(type_list):
+            if i == 0 and j == 0:
                 line_list += [l]
                 label_list += [t]
 
