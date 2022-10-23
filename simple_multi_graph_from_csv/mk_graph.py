@@ -23,7 +23,6 @@ df = pd.read_csv("data.csv", encoding="UTF-8")
 # Create graph
 fig, axs = plt.subplots(fig_block_m, fig_block_n, figsize=(10, 6))
 
-type_index = 0
 line_list = []
 label_list = []
 for i in range(fig_block_n):
@@ -43,14 +42,13 @@ for i in range(fig_block_n):
                 line_list += [l]
                 label_list += [t]
 
-        # inc type_index
-        type_index += 1
-
 # Legend config
 fig.legend(line_list,
-        labels=label_list,
-        loc='upper center',
-        ncol=len(type_list))
+           labels=label_list,
+           loc='upper center',
+           ncol=len(type_list),
+           bbox_to_anchor=(0.5, 1.0)
+           )
 
 # Save to file
 fig.savefig(output_file_name, bbox_inches="tight")
