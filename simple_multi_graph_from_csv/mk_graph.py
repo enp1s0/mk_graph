@@ -51,4 +51,6 @@ fig.legend(line_list,
            )
 
 # Save to file
+fig.tight_layout()
+fig.subplots_adjust(hspace=0)
 fig.savefig(output_file_name, bbox_inches="tight")
