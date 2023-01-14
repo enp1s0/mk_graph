@@ -24,6 +24,9 @@ for t in type_list:
     # Plot
     plt.plot(df_t['x'], df_t['y'], label="Type" + t, markersize=4, marker="*")
 
+#plt.annotate('', (1, 10), (1, 20), arrowprops=dict(facecolor='darkgray', shrink=0., width=2, headwidth=6))
+#plt.text(1.1, 15, 'better', ha="center", va="center", rotation=90)
+
 # Legend config
 plt.legend(loc='best',
        ncol=len(type_list))
