@@ -68,6 +68,5 @@ fig, axs = plt.subplots(fig_block_m, fig_block_n, figsize=(6, 3.1))
 draw_breakdown(axs)
 
 # Save to file
-fig.tight_layout()
-fig.subplots_adjust(hspace=0)
+#fig.subplots_adjust(hspace=0)
 fig.savefig(output_file_name, bbox_inches="tight")
