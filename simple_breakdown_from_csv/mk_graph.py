@@ -4,7 +4,7 @@ import numpy as np
 
 def draw_breakdown(ax):
     ax.grid(True, axis='y')
-    ax.set_title('breakdown', fontsize=global_fontsize)
+    ax.set_title('breakdown')
     ax.set_ylabel('[%]')
 
     x_list = ['XXX', 'YYY', 'ZZZ']
