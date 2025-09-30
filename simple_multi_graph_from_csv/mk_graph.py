@@ -39,14 +39,14 @@ for i in range(fig_block_n):
                     marker="*",
                     color=color_table[t])
             if i == 0 and j == 0:
-                line_list += [l]
+                line_list += l
                 label_list += [t]
 
                 #axs[j][i].annotate('', (0, 7), (0, 8), arrowprops=dict(facecolor='darkgray', shrink=0., width=2, headwidth=6))
                 #axs[j][i].text(0.2, 7.5, 'better', ha="center", va="center", rotation=90)
 
 # Legend config
-fig.legend(line_list,
+fig.legend(handles=line_list,
            labels=label_list,
            loc='upper center',
            ncol=len(type_list),
